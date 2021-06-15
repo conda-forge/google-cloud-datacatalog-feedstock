@@ -1,5 +1,5 @@
 {% set name = "google-cloud-datacatalog" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-datacatalog-{{ version }}.tar.gz
-  sha256: a841a89bf3596cf05e8adf24734433111ef25585867e17fa4b64d36bce759004
+  sha256: f5ed7b97f35f3264647c113f93fdc31bfdfa698351a80a0b0beb469ec7ff3f0b
 
 build:
   number: 0
@@ -17,14 +17,15 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
+    - pip
   run:
+    - python >=3.6
     - google-api-core >=1.22.2,<2.0.0dev
     - grpc-google-iam-v1 >=0.12.3,<0.13dev
     - libcst >=0.2.5
+    - packaging >=14.3
     - proto-plus >=1.4.0
-    - python >=3.6
 
 test:
   imports:
