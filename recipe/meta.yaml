@@ -1,5 +1,5 @@
 {% set name = "google-cloud-datacatalog" %}
-{% set version = "3.9.3" %}
+{% set version = "3.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-datacatalog-{{ version }}.tar.gz
-  sha256: 2601ace25a8eaee1e8848cba19a506487af4bddfa516c239bb83d5670b7bb5da
+  sha256: e63f1d68456a0c440a1d4fd76d9f54eaaa7401ac9ed0a53324cca3f5f889b51b
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -20,10 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - google-api-core-grpc >=1.32.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*
-    - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
+    - google-api-core-grpc >=1.34.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - proto-plus >=1.22.0,<2.0.0dev
     - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+    - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
 
 test:
   imports:
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/googleapis/python-datacatalog
-  summary: Google Cloud Data Catalog API API client library
+  summary: Google Cloud Datacatalog API client library
   license: Apache-2.0
   license_file: LICENSE
   dev_url: https://github.com/googleapis/python-datacatalog
