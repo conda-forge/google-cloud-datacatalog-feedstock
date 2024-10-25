@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Datacatalog API client library
 
-Development: https://github.com/googleapis/python-datacatalog
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-datacatalog
 
 Documentation: https://cloud.google.com/data-catalog
 
