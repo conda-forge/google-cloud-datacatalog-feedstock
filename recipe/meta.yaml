@@ -1,13 +1,13 @@
 {% set name = "google-cloud-datacatalog" %}
-{% set version = "3.21.0" %}
+{% set version = "3.21.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 247dd65bcbf556b4de6cdc84cbb1032fd9ef31a45fda04137fa7e759ba8c6c20
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: db605692dac3d66edccdb748424b1102a31d84af305c83a93bad29ceefaf8cca
 
 build:
   noarch: python
