@@ -1,5 +1,5 @@
 {% set name = "google-cloud-datacatalog" %}
-{% set version = "3.25.0" %}
+{% set version = "3.25.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3412e88c6bcdc759baad3db3ee1d6c8fb6d7968f2050cc2fc981aabb3cb5bb48
+  sha256: 2e40a2f9bcc2cb0b66b442bf6b2a557ae9c0ebf142eed0c72d5ceb88f858744d
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     # more restrictive version for python 3.13
     - proto-plus >=1.25.0,<2.0.0dev
     - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
-    - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
+    - grpc-google-iam-v1 >=0.14.0,<1.0.0dev
 
 test:
   imports:
