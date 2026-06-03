@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-datacatalog
-  version: "3.30.0"
+  version: "3.31.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_datacatalog-${{ version }}.tar.gz
-  sha256: e19e27190abe0ddd9776be1b658472dcfac82d6525f3851b0b0c6ecb592f04e6
+  sha256: 1e3ee2cc9305b8be71bf5b260ee66fb76c00491b21a059f743cee9dc8efd400e
 
 build:
   number: 0
